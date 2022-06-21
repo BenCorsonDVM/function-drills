@@ -375,12 +375,14 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 function ascend(num1){
+  let flag
   for(i=0;i<num1.length;i++){
-    if(num1[i] > num1[i+1]){
-      return false
+    if(num1[i] < num1[i+1] || num1[i+1] === num1[i]){
+     flag = true
     } else
-      return true
+     flag = false
   }
+  return flag
 }
 
 let arrayIsAscending = ascend(sampleArray)
