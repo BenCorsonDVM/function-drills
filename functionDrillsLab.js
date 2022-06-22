@@ -358,14 +358,13 @@ let totalFrogs = purchase(21)
 */
 
 function purchase2(gold){
-  let frogsPurchased = gold/3
-  let frogsFloor = Math.floor(frogsPurchased)
-  return frogsFloor
+  let frogsPurchased = Math.floor(gold/3)
+  return frogsPurchased
 }
 
-let totalFrogs2 = purchase2(4)
+let totalFrogs2 = purchase2(16)
 
-// console.log(totalFrogs2)
+console.log(totalFrogs2)
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
@@ -412,13 +411,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = [duck]
+// let globalScope = [duck]
 
-//This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = [rubberDuck, duck]
+// //This array should contain the variable names (as strings) accessible in the bathroom function.
+// let bathroomScope = [rubberDuck, duck]
 
-//This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = [sailorDuck, rubberDuck, duck]
+// //This array should contain the variable names (as strings) accessible in the bathtub function.
+// let bathtubScope = [sailorDuck, rubberDuck, duck]
 
-//This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = [realDuck, duck]
+// //This array should contain the variable names (as strings) accessible in the pond function.
+// let pondScope = [realDuck, duck]
