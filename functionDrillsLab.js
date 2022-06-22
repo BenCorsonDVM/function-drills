@@ -263,7 +263,7 @@ let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 function bigOrSmall(arr){
-  answers = []
+  let answers = []
   for(i=0;i<arr.length;i++){
     if(arr[i] > 100){
       answers.push('big')
@@ -271,11 +271,12 @@ function bigOrSmall(arr){
       answers.push('small')
     }
   }
+  return answers
 }
 
 let arrayEvaluator = bigOrSmall(bigOrSmallArray)
 
-// console.log(answers)
+// console.log(arrayEvaluator)
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -377,7 +378,7 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 function ascend(num1){
   let flag
   for(i=0;i<num1.length;i++){
-    if(num1[i] < num1[i+1] || num1[i+1] === num1[i]){
+    if(num1[i] <= num1[i+1]){
      flag = true
     } else
      flag = false
@@ -387,7 +388,7 @@ function ascend(num1){
 
 let arrayIsAscending = ascend(sampleArray)
 
-console.log(arrayIsAscending)
+// console.log(arrayIsAscending)
 
 ////////////////// PROBLEM 22 ////////////////////
 
@@ -411,13 +412,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = [duck]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = [rubberDuck, duck]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = [sailorDuck, rubberDuck, duck]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = [realDuck, duck]
